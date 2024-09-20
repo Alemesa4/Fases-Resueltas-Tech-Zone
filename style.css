@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(23, 55, 83);
+}
+.titulo{
+    text-align: center;
+    background-color: rgb(127, 255, 180);
+    border-radius: 15px;
+}
+table{
+    border-collapse: collapse; 
+    border: 2px solid black; 
+    border-spacing: 100px;
+    table-layout: auto;width: 50%;
+
+}
+td,th{
+background-color: rgb(193, 193, 193);
+padding:5px;
+padding-bottom: 5px;
+}
+.arriba{
+    background-color: rgb(102, 101, 101);
+}
+nav{
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+nav a:hover{
+    background-color: rgb(80, 129, 131);
+}
+nav li:hover{
+    background-color: rgb(80, 129, 131);
+}
+nav li{
+    display: inline;
+margin-right: 20px;
+}
+div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabla{
+    margin-top: 20px;
+}
