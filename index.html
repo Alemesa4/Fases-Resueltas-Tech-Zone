@@ -1,80 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-    <h1 class="titulo">
-        Fases Resueltass
-    </h1>
-</header>
-<div class="Barra">
-    <nav><ul>
-       <li> <a href="" class="BarraInicio">Planificación</a></li>
-        <li><a href="" class="BarraInicio">Definición</a></li>
-        <li> <a href="" class="BarraInicio">Diseño</a></li>
-        <li> <a href="" class="BarraInicio">Implementación</a></li>
-        <li> <a href="" class="BarraInicio">Pruebas</a></li>
-        <li> <a href="" class="BarraInicio">Despliegue y Mantenimiento</a></li>
-    </ul>
-    </nav>
+      <h1 class="titulo">Fases Resueltas</h1>
+    </header>
+    <div class="centrar">
+      <div class="base">
+        <div class="barra">
+          <nav>
+            <ul>
+              <li><a href="#planificacion">Planificación</a></li>
+              <li><a href="#definicion">Definición</a></li>
+              <li><a href="#diseño">Diseño</a></li>
+              <li><a href="#implementacion">Implementación</a></li>
+              <li><a href="#pruebas">Pruebas</a></li>
+              <li><a href="#despliegue">Despliegue y Mantenimiento</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="content">
+
+          <div id="planificacion" class="section">
+            <table>
+              <tr>
+                <td class="arriba">Requisito</td>
+                <td class="arriba">Plazo entrega</td>
+              </tr>
+              <tr>
+                <td>Catálogo de productos</td>
+                <td>2 semanas</td>
+              </tr>
+              <tr>
+                <td>Carrito de compras</td>
+                <td>1 semana</td>
+              </tr>
+              <tr>
+                <td>Registro e inicio de sesión de usuarios</td>
+                <td>2 semanas</td>
+              </tr>
+              <tr>
+                <td>Historial de pedidos y gestión de cuentas</td>
+                <td>1 semana</td>
+              </tr>
+              <tr>
+                <td>Proceso de pago y opciones (Stripe y Coinbase)</td>
+                <td>2 semanas</td>
+              </tr>
+              <tr>
+                <td>Notificaciones por correo electrónico</td>
+                <td>1 semana</td>
+              </tr>
+              <tr>
+                <td>Seguimiento de pedidos en tiempo real</td>
+                <td>1 semana</td>
+              </tr>
+              <tr>
+                <td>Rendimiento y escalabilidad	</td>
+                <td>En paralelo con la implementación
+                </td>
+              </tr>
+              <tr>
+                <td>Seguridad (SSL, cifrado, protección XSS/CSRF)</td>
+                <td>En paralelo con la integración de pagos</td>
+              </tr>
+              <tr>
+                <td>Compatibilidad (diseño responsivo)</td>
+                <td>Durante todo el desarrollo</td>
+              </tr>
+              <tr>
+                <td>Mantenimiento (código limpio, plan de actualizaciones)	</td>
+                <td>Al final del proyecto</td>
+              </tr>
+              <tr>
+                <td>Pruebas de rendimiento, seguridad y escalabilidad</td>
+                <td>2 semanas</td>
+              </tr>
+              <tr>
+                <td>Pruebas de compatibilidad</td>
+                <td>1 semana</td>
+              </tr>
+              <tr>
+                <td>Despliegue y puesta en producción</td>
+                <td>1 semana</td>
+              </tr>
+
+            </table>
+          </div>
+
+          <div class="section" id="definicion">
+            <h2>Requisitos Funcionales</h2>
+            <h3>Catálogo de Productos</h3>
+            <p>Los usuarios podrán ver todos los productos organizados por categorías.</p>
+            <h4>Subfunción:</h4>
+            <p>Los usuarios pueden hacer clic en un producto para ver detalles como la descripción, el precio y características adicionales.</p>
+        
+            <h3>Carrito de Compras</h3>
+            <p>Los usuarios podrán añadir productos a un carrito de compras.</p>
+            <h4>Subfunción:</h4>
+            <p>El carrito debe poder actualizarse con cambios de cantidad y eliminación de productos.</p>
+        
+            <h3>Registro e Inicio de Sesión</h3>
+            <p>Los usuarios podrán registrarse con su correo electrónico y gestionar su cuenta.</p>
+            <h4>Subfunción:</h4>
+            <p>Los usuarios podrán iniciar sesión, revisar sus compras anteriores y actualizar información personal como la dirección de envío.</p>
+        
+            <h3>Historial de Compras</h3>
+            <p>Los usuarios tendrán acceso a un historial de pedidos anteriores, donde podrán ver detalles de cada compra.</p>
+        
+            <h3>Proceso de Pago</h3>
+            <p>Los usuarios podrán pagar usando varios métodos, como tarjeta de crédito o PayPal.</p>
+            <h4>Subfunción:</h4>
+            <p>Verificar el costo del envío antes del pago y confirmar el pedido.</p>
+        
+            <h3>Notificaciones de Pedidos</h3>
+            <p>Los usuarios recibirán notificaciones por correo electrónico sobre el estado de su pedido, como confirmación de compra y envío.</p>
+        
+            <h3>Seguimiento de Pedidos</h3>
+            <p>Los usuarios podrán seguir el estado de sus pedidos en tiempo real una vez que hayan sido enviados.</p>
+        
+            <h2>Requisitos No Funcionales</h2>
+            <h3>Usabilidad</h3>
+            <p>La interfaz debe ser fácil de usar e intuitiva, con una navegación fluida entre las secciones del catálogo, carrito de compras y gestión de cuentas.</p>
+        
+            <h3>Rendimiento</h3>
+            <p>La aplicación debe poder soportar múltiples usuarios simultáneamente, manteniendo tiempos de respuesta rápidos, especialmente durante el proceso de pago.</p>
+        
+            <h3>Seguridad</h3>
+            <p>El sistema debe manejar de manera segura los datos de los usuarios y sus transacciones, asegurando la privacidad de la información personal y los datos financieros.</p>
+        
+            <h3>Disponibilidad</h3>
+            <p>La plataforma debe estar disponible 24/7, con un mínimo de tiempo de inactividad durante actualizaciones o mantenimiento.</p>
+        
+            <h3>Escalabilidad</h3>
+            <p>El sistema debe ser capaz de manejar el crecimiento en la cantidad de productos, usuarios y transacciones sin degradar el rendimiento.</p>
+        
+            <h3>Compatibilidad</h3>
+            <p>La aplicación debe ser accesible en distintos dispositivos (móviles, tablets, desktops) y navegadores modernos.</p>
+        
+            <h3>Mantenibilidad</h3>
+            <p>El código de la aplicación debe estar bien documentado para facilitar futuras actualizaciones o correcciones.</p>
 </div>
-    <div class="tabla">
-    <table>
-        <tr>
-            <td class="arriba">Requisito</td>
-            <td class="arriba">Plazo entrega</td>
-        </tr>
-        <tr>
-            <td>Catálogo de productos</td>
-            <td>2 semanas</td>
-        </tr>
-        <tr>
-            <td>Carrito de compras	</td>
-            <td>1 semana</td>
-        </tr>
-        <tr>
-            <td>Registro e inicio de sesión de usuarios	</td>
-            <td>2 semanas</td>
-        </tr>
-        <tr>
-            <td>Historial de pedidos y gestión de cuentas	</td>
-            <td>1 semana</td>
-        </tr>
-        <tr>
-            <td>Proceso de pago y opciones (Stripe y Coinbase)	</td>
-            <td>2 semanas
-            </td>
-        </tr>
-        <tr>
-            <td>Notificaciones por correo electrónico	</td>
-            <td>1 semana</td>
-        </tr>
-        <tr>
-            <td>Seguimiento de pedidos en tiempo real	</td>
-            <td>1 semana</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</div>
-</body>
+          </div>
+          <div class="section" id="diseño">
+            <h2>Tecnologías Utilizadas</h2>
+    
+            <h3>Frontend</h3>
+            <p>Desarrollo en React para una interfaz ágil y responsiva, adaptada a móviles y tablets.</p>
+        
+            <h3>Backend</h3>
+            <p>Node.js y una API REST para manejar operaciones de usuario, carrito y pagos.</p>
+        
+            <h3>Base de Datos</h3>
+            <p>MongoDB para gestionar los productos, usuarios y pedidos.</p>
+        
+            <h3>Integración de Pagos</h3>
+            <p>Integración de la pasarela de pago Stripe para tarjetas y Coinbase Commerce para criptomonedas.</p>
+            
+            <img src="imagenes/Esquema.png"Descripción de la imagen" class="imagen-tecnologias">
+            
+          </div>
+          <div class="section" id="implementacion">
+            <h2>Funcionalidades Clave</h2>
+    
+            <h3>Gestión de Productos</h3>
+            <p>Configurar la API REST para gestionar el catálogo de productos, el carrito y los pagos.</p>
+        
+            <h3>Interfaz de Usuario</h3>
+            <p>Crear interfaces atractivas con React, incluyendo un sistema de recomendación de productos.</p>
+        
+            <h3>Opciones de Pago</h3>
+            <p>Integrar las opciones de pago y configurar los cupones de descuento en tiempo real.</p>
+            
+          </div>
+          <div class="section" id="pruebas">
+            <h2>Pruebas y Validaciones</h2>
+    
+            <h3>Pruebas de Carga</h3>
+            <p>Realizar pruebas de carga con herramientas como JMeter para ver cómo responde la plataforma bajo la demanda de múltiples usuarios.</p>
+        
+            <h3>Flujos de Compra</h3>
+            <p>Testear todos los flujos de compra y la funcionalidad del carrito con diferentes dispositivos y navegadores.</p>
+            
+          </div>
+          <div class="section" id="despliegue">
+            <h2>Despliegue y Monitoreo</h2>
+    
+            <h3>Despliegue en AWS</h3>
+            <p>Desplegar la aplicación en AWS para asegurar escalabilidad, con balanceadores de carga y respaldo automatizado.</p>
+        
+            <h3>Monitoreo de Rendimiento</h3>
+            <p>Monitorear el rendimiento de la aplicación usando CloudWatch, y establecer ciclos de actualización periódicos para mejoras y nuevos lanzamientos de productos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
